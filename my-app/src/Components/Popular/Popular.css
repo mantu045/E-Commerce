@@ -1,0 +1,56 @@
+/* Popular.css */
+
+.popular {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.popular h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.popular hr {
+  width: 80px;
+  height: 4px;
+  background-color: #ff4d4d;
+  border: none;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Optional: Card styling for each item */
+.popular-item .item {
+  width: 100%;
+  max-width: 240px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-item .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.popular-item .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
